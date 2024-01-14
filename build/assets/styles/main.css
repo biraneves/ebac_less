@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.w-100 {
+  width: 100%;
+}
+body {
+  background-color: #192a56;
+  color: #f5f6fa;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 960px;
+  width: [object Object];
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 70%;
+    height: fit-content;
+    min-height: 100vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+}
+header {
+  padding: 36px;
+}
+header .profile-avatar {
+  display: block;
+  margin: 0 auto 36px;
+  border-radius: 50%;
+  width: 96px;
+}
+.profile-bio {
+  text-align: center;
+}
+.profile-bio-name {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.profile-bio-subtitle {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.profile-bio-description {
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.7;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 240px;
+  width: [object Object];
+  margin: 0 auto;
+  height: 32px;
+}
+.social-links li {
+  width: 32px;
+}
+.social-links li a {
+  color: #f5f6fa;
+  text-decoration: none;
+  font-size: 24px;
+  transition: all ease 0.4s;
+}
+.social-links li a:hover {
+  font-size: 28px;
+}
+.projects-list {
+  margin-top: 32px;
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #0097e6;
+  display: block;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #f5f6fa;
+  font-weight: bold;
+  border-radius: 30px;
+  border: solid 1px #0097e6;
+  transition: all ease 0.4s;
+}
+.projects-list-item a:hover {
+  background-color: transparent;
+  color: #f5f6fa;
+}
